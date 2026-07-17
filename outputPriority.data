@@ -1,0 +1,36 @@
+Priority scheduling results:
+time       cpu        priority   ready queue (tid/rst)
+----------------------------------------------------
+0                               --
+1                               --
+2                               --
+3          Y4         7         --
+4          Y3         7         --
+5          Y2         7         --
+6          Y1         7         --
+7                               --
+8                               --
+9                               --
+10         Z4         7         A2 8  
+11         Z3         7         A2 8  
+12         Z2         7         A2 8  
+13         Z1         7         A2 8  
+14         A2         8         --
+15         A1         8         --
+
+
+                      arrival    service    completion response   wait      
+tid        prio       time       time       time       time       time      
+-----------------------------------------------------------------------
+A          8          10         2          16         6          4         
+Y          7          3          4          7          4          0         
+Z          7          10         4          14         4          0         
+
+
+service    wait      
+time       time      
+---------  -------
+2          4         
+4          0         
+4          0         
+

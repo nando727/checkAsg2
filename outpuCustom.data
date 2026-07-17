@@ -1,0 +1,36 @@
+Custom (preemptive) scheduling results:
+time       cpu        priority   ready queue (tid/rst)
+----------------------------------------------------
+0                               --
+1                               --
+2                               --
+3          Y4         7         --
+4          Y3         8         --
+5          Y2         9         --
+6          Y1         10        --
+7                               --
+8                               --
+9                               --
+10         Z4         7         A2 8  
+11         A2         8         Z3 8  
+12         Z3         8         A1 9  
+13         A1         9         Z2 9  
+14         Z2         9         --
+15         Z1         10        --
+
+
+                      arrival    service    completion response   wait      
+tid        prio       time       time       time       time       time      
+-----------------------------------------------------------------------
+A          9          10         2          14         4          2         
+Y          10         3          4          7          4          0         
+Z          10         10         4          16         6          2         
+
+
+service    wait      
+time       time      
+---------  -------
+2          2         
+4          0         
+4          2         
+
